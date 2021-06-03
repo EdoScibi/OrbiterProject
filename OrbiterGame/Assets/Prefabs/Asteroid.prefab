@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 5080339979955727611}
   - component: {fileID: 5080339979955727612}
   - component: {fileID: 5080339979955727613}
-  - component: {fileID: 5080339979955727614}
-  - component: {fileID: 5080339979955727615}
-  - component: {fileID: 5080339979955727610}
   - component: {fileID: 5080339979955727609}
+  - component: {fileID: 5080339979955727615}
+  - component: {fileID: 5080339979955727614}
+  - component: {fileID: 5080339979955727610}
   m_Layer: 0
   m_Name: Asteroid
   m_TagString: Untagged
@@ -109,6 +109,38 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!58 &5080339979955727609
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5080339979955727584}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!58 &5080339979955727615
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5080339979955727584}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 12.26
 --- !u!250 &5080339979955727614
 PointEffector2D:
   m_ObjectHideFlags: 0
@@ -129,22 +161,6 @@ PointEffector2D:
   m_ForceMode: 2
   m_Drag: 0
   m_AngularDrag: 0
---- !u!58 &5080339979955727615
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5080339979955727584}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 1
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 12.26
 --- !u!114 &5080339979955727610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,19 +174,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _initialForce: {x: -2, y: 2}
---- !u!58 &5080339979955727609
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5080339979955727584}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
