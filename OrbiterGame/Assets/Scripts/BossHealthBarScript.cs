@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class BossHealthBarScript : MonoBehaviour
 {
-
     public Slider barSlider;
 
     public void SetMaxHealth(float health)
